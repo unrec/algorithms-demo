@@ -10,4 +10,8 @@ public class ArrayGenerator {
     public static int[] generate(int size, int bound) {
         return IntStream.generate(() -> random.nextInt(bound)).limit(size).toArray();
     }
+
+    public static int[] generateSorted(int size, int bound) {
+        return IntStream.generate(() -> random.nextInt(bound)).limit(size).sorted().toArray();
+    }
 }
