@@ -3,10 +3,10 @@ package com.unrec.algorithms.sort;
 public class SelectionSort implements SortAlgorithm {
 
     @Override
-    public void sort(int[] array) {
-        for (int startIndex = 0; startIndex < array.length - 1; startIndex++) {
+    public void sort(int[] array, int n) {
+        for (int startIndex = 0; startIndex < n - 1; startIndex++) {
             int minIndex = startIndex;
-            for (int i = startIndex + 1; i < array.length; i++) {
+            for (int i = startIndex + 1; i < n; i++) {
                 if (array[i] < array[minIndex]) {
                     minIndex = i;
                 }

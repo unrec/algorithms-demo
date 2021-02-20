@@ -2,11 +2,10 @@ package com.unrec.algorithms.sort;
 
 public class GnomeSort implements SortAlgorithm {
 
-    public void sort(int[] array) {
-        int size = array.length;
+    public void sort(int[] array, int n) {
         int index = 0;
 
-        while (index < size) {
+        while (index < n) {
             if (index == 0) {
                 index++;
             }
