@@ -9,7 +9,7 @@ public class ReverseLinkedList {
         System.out.println("size = " + size);
 
         Node list = generateList(size);
-        System.out.println("Before: "+ printNode(list));
+        System.out.println("Before: " + printNode(list));
 
         Node reversed = reverse(list);
         System.out.println("After: " + printNode(reversed));
@@ -52,5 +52,22 @@ public class ReverseLinkedList {
             node = node.next;
         }
         return sb.toString();
+    }
+
+    private static class Node {
+        int value;
+        Node next;
+
+        Node() {
+        }
+
+        Node(int value) {
+            this.value = value;
+        }
+
+        Node(int value, Node next) {
+            this.value = value;
+            this.next = next;
+        }
     }
 }
