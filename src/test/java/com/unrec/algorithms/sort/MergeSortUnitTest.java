@@ -22,7 +22,7 @@ public class MergeSortUnitTest {
         log.debug("Array before sorting: {}", Arrays.toString(array));
 
         //when
-        mergeSort.sort(array, 0, array.length - 1);
+        mergeSort.sort(array, array.length - 1);
 
         //then
         log.debug("Array after sorting: {}", Arrays.toString(array));

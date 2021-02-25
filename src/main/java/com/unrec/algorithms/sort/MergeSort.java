@@ -4,17 +4,17 @@ public class MergeSort implements SortAlgorithm {
 
     @Override
     public void sort(int[] array, int n) {
-        sort(array, 0, n);
+        mergeSort(array, 0, n);
     }
 
-    public void sort(int[] array, int start, int end) {
+    private void mergeSort(int[] array, int start, int end) {
         if (end <= start) {
             return;
         }
         int mid = start + (end - start) / 2;
 
-        sort(array, start, mid);
-        sort(array, mid + 1, end);
+        mergeSort(array, start, mid);
+        mergeSort(array, mid + 1, end);
         merge(array, start, mid, end);
     }
 
