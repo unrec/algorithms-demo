@@ -34,6 +34,6 @@ public class MergeSortBenchmarkTest {
     public void mergeSort(SortExecutionPlan plan) {
 
         int[] array = plan.array;
-        mergeSort.sort(array, 0, array.length - 1);
+        mergeSort.sort(array, array.length - 1);
     }
 }
